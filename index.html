@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내집꾸미기</title>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- 헤더 영역 -->
+    <div id="header">
+        <div class="container h-100">
+            <div class="d-flex justify-content-between align-items-center h-100">
+                <div class="left d-flex align-items-center">
+                    <a href="./index.html">
+                        <img src="./images/logo.svg" alt="내집꾸미기" title="내집꾸미기" height="40">
+                    </a>
+                    <div class="nav-desktop ml-5 d-none d-lg-flex">
+                        <a href="./index.html">홈</a>
+                        <a href="#">온라인 집들이</a>
+                        <a href="./store.html">스토어</a>
+                        <a href="#">전문가</a>
+                        <a href="#">시공 견적</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="auth d-none d-lg-flex">
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                    </div>
+                    <button class="menu-open d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="menu d-lg-none">
+                        <div class="nav-mobile">
+                            <a class="my-2" href="./index.html">홈</a>
+                            <a class="my-2" href="#">온라인 집들이</a>
+                            <a class="my-2" href="./store.html">스토어</a>
+                            <a class="my-2" href="#">전문가</a>
+                            <a class="my-2" href="#">시공 견적</a>
+                        </div>
+                        <div class="auth-mobile mt-2">
+                            <a href="#">로그인</a>
+                            <a href="#">회원가입</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /헤더 영역 -->
+
+    <!-- 비주얼 영역 -->
+    <input type="radio" name="slide" hidden="hidden" id="slide-1" checked>
+    <input type="radio" name="slide" hidden="hidden" id="slide-2">
+    <input type="radio" name="slide" hidden="hidden" id="slide-3">
+    <input type="radio" name="slide" hidden="hidden" id="slide-4">
+    <div id="visual">
+        <div class="design-line d-none d-lg-block"></div>
+        <div class="design-line d-none d-lg-block"></div>
+        <div class="image-line">
+            <div class="images">
+                <img src="./images/slide/1.jpg" alt="슬라이드 이미지" title="슬라이드 이미지">
+                <img src="./images/slide/2.jpg" alt="슬라이드 이미지" title="슬라이드 이미지">
+                <img src="./images/slide/3.jpg" alt="슬라이드 이미지" title="슬라이드 이미지">
+            </div>
+        </div>
+        <div class="position-center">
+            <div class="text-right font-weight-bold fx-5 fx-lg-4 mb-n3 mb-lg-n4 text-gold">for Customer</div>
+            <div class="fx-8 fx-lg-7 segoe font-weight-bolder text-white">INTERIOR</div>
+            <div class="d-between flex-column flex-lg-row mt-2">
+                <p class="text-gray fx-n3 mb-5 mb-lg-0">나만의 인테리어로 새로운 공간을 만듭니다.</p>
+                <div class="buttons d-flex"> 
+                    <button class="left-btn border mr-2">
+                        <i class="fa fa-angle-left fa-lg text-white"></i>
+                        <label for="slide-1" class="label-1"></label>
+                        <label for="slide-2" class="label-2"></label>
+                        <label for="slide-3" class="label-3"></label>
+                        <label for="slide-4" class="label-4"></label>
+                    </button>
+                    <button class="right-btn border">
+                        <i class="fa fa-angle-right fa-lg text-white"></i>
+                        <label for="slide-1" class="label-1"></label>
+                        <label for="slide-2" class="label-2"></label>
+                        <label for="slide-3" class="label-3"></label>
+                        <label for="slide-4" class="label-4"></label>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /비주얼 영역 -->
+
+    <!-- 온라인 집들이 -->
+    <div class="container padding">
+        <div class="d-between align-items-end">
+            <div>
+                <span class="text-muted">온라인 집들이</span>
+                <div class="title mt-n1">KNOWHOWS</div>
+            </div>
+            <button class="border-btn segoe">
+                Read More
+                <i class="fa fa-angle-right ml-2"></i>
+            </button>
+        </div>
+        <hr class="mt-4 mb-5">
+        <div class="row">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <div class="knowhow-item">
+                    <div class="image">
+                        <img src="./images/online-party/1_before.jpg" alt="Before" title="Before" class="before">
+                        <img src="./images/online-party/1_after.jpg" alt="After" title="After" class="after">
+                    </div>
+                    <div class="mt-3 d-between px-2">
+                        <div class="fx-2">
+                            <i class="fa fa-star text-gold"></i>
+                            <span class="text-darkgold">4</span>
+                        </div>
+                        <div>
+                            <span>유저1</span>
+                            <small class="text-muted">님의 인테리어</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <div class="knowhow-item">
+                    <div class="image">
+                        <img src="./images/online-party/2_before.jpg" alt="Before" title="Before" class="before">
+                        <img src="./images/online-party/2_after.jpg" alt="After" title="After" class="after">
+                    </div>
+                    <div class="mt-3 d-between px-2">
+                        <div class="fx-2">
+                            <i class="fa fa-star text-gold"></i>
+                            <span class="text-darkgold">3</span>
+                        </div>
+                        <div>
+                            <span>유저2</span>
+                            <small class="text-muted">님의 인테리어</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <div class="knowhow-item">
+                    <div class="image">
+                        <img src="./images/online-party/3_before.jpg" alt="Before" title="Before" class="before">
+                        <img src="./images/online-party/3_after.jpg" alt="After" title="After" class="after">
+                    </div>
+                    <div class="mt-3 d-between px-2">
+                        <div class="fx-2">
+                            <i class="fa fa-star text-gold"></i>
+                            <span class="text-darkgold">5</span>
+                        </div>
+                        <div>
+                            <span>유저3</span>
+                            <small class="text-muted">님의 인테리어</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <div class="knowhow-item">
+                    <div class="image">
+                        <img src="./images/online-party/4_before.jpg" alt="Before" title="Before" class="before">
+                        <img src="./images/online-party/4_after.jpg" alt="After" title="After" class="after">
+                    </div>
+                    <div class="mt-3 d-between px-2">
+                        <div class="fx-2">
+                            <i class="fa fa-star text-gold"></i>
+                            <span class="text-darkgold">2</span>
+                        </div>
+                        <div>
+                            <span>유저4</span>
+                            <small class="text-muted">님의 인테리어</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /온라인 집들이 -->
+    
+    <!-- 전문가 소개 -->
+    <div class="text-center pb-5">
+        <span class="text-muted">전문가 소개</span>
+        <div class="title">SPECIALISTS</div>
+    </div>
+    <div class="position-relative bg-palegold mt-4 mb-5">
+        <div class="design-text d-none d-lg-block">SPECIALISTS</div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-6 mb-5 mb-lg-0">
+                    <div class="special-item">
+                        <div class="front">
+                            <img src="./images/specialist/specialist1.jpg" alt="전문가 이미지" title="전문가 이미지">
+                        </div>
+                        <div class="back">
+                            <div class="d-flex flex-column align-items-center">
+                                <small class="text-muted">specialist1</small>
+                                <div class="fx-3">전문가1</div>
+                                <div class="bar mt-3 mb-4"></div>
+                                <button class="border-btn fx-n2 px-4">상세보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mb-5 mb-lg-0">
+                    <div class="special-item">
+                        <div class="front">
+                            <img src="./images/specialist/specialist2.jpg" alt="전문가 이미지" title="전문가 이미지">
+                        </div>
+                        <div class="back">
+                            <div class="d-flex flex-column align-items-center">
+                                <small class="text-muted">specialist2</small>
+                                <div class="fx-3">전문가2</div>
+                                <div class="bar mt-3 mb-4"></div>
+                                <button class="border-btn fx-n2 px-4">상세보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mb-5 mb-lg-0">
+                    <div class="special-item">
+                        <div class="front">
+                            <img src="./images/specialist/specialist3.jpg" alt="전문가 이미지" title="전문가 이미지">
+                        </div>
+                        <div class="back">
+                            <div class="d-flex flex-column align-items-center">
+                                <small class="text-muted">specialist3</small>
+                                <div class="fx-3">전문가3</div>
+                                <div class="bar mt-3 mb-4"></div>
+                                <button class="border-btn fx-n2 px-4">상세보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-6 mb-5 mb-lg-0">
+                    <div class="special-item">
+                        <div class="front">
+                            <img src="./images/specialist/specialist4.jpg" alt="전문가 이미지" title="전문가 이미지">
+                        </div>
+                        <div class="back">
+                            <div class="d-flex flex-column align-items-center">
+                                <small class="text-muted">specialist4</small>
+                                <div class="fx-3">전문가4</div>
+                                <div class="bar mt-3 mb-4"></div>
+                                <button class="border-btn fx-n2 px-4">상세보기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="text-center pt-5">
+        <button class="black-btn py-3 px-5">
+            Read More
+        </button>
+    </div>
+    <!-- /전문가 소개 -->
+
+    <!-- 전문가 리뷰 -->
+    <div class="container padding">
+        <div class="d-between align-items-end">
+            <div>
+                <span class="text-muted">온라인 집들이</span>
+                <div class="title mt-n1">KNOWHOWS</div>
+            </div>
+            <button class="border-btn segoe">
+                Read More
+                <i class="fa fa-angle-right ml-2"></i>
+            </button>
+        </div>
+        <hr class="mt-4 mb-5">
+        <div class="row">
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="review-item border p-3 d-flex">
+                    <div class="image">
+                        <img class="fit-cover" src="./images/specialist/specialist2.jpg" alt="전문가 이미지" title="전문가 이미지">
+                    </div>
+                    <div class="info">
+                        <div class="d-between flex-column h-100 px-4 py-3">
+                            <div class="w-100">
+                                <div class="mb-3">
+                                    <span class="fx-3">전문가2</span>
+                                    <small class="text-darkgold">(speicalist2)</small>
+                                </div>
+                                <div class="mb-1">
+                                    <small class="text-muted">작성자</small>
+                                    <span class="fx-n2 ml-2">박재현(park)</span>
+                                </div>
+                                <div class="mb-1">
+                                    <small class="text-muted">비용</small>
+                                    <span class="fx-n2 ml-3">3,200,000</span>
+                                </div>
+                                <div>
+                                    <small class="text-muted">평점</small>
+                                    <span class="fx-n2 ml-2 text-gold">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="w-100">
+                                <p class="fx-n2 text-ellipsis">원하던 아이언맨 컨셉으로 너무 잘 꾸며주셨습니다!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 mb-5 mb-lg-0">
+                <div class="review-item border p-3 d-flex">
+                    <div class="image">
+                        <img class="fit-cover" src="./images/specialist/specialist4.jpg" alt="전문가 이미지" title="전문가 이미지">
+                    </div>
+                    <div class="info">
+                        <div class="d-between flex-column h-100 px-4 py-3">
+                            <div class="w-100">
+                                <div class="mb-3">
+                                    <span class="fx-3">전문가4</span>
+                                    <small class="text-darkgold">(speicalist4)</small>
+                                </div>
+                                <div class="mb-1">
+                                    <small class="text-muted">작성자</small>
+                                    <span class="fx-n2 ml-2">김정수(kim)</span>
+                                </div>
+                                <div class="mb-1">
+                                    <small class="text-muted">비용</small>
+                                    <span class="fx-n2 ml-3">5,500,000</span>
+                                </div>
+                                <div>
+                                    <small class="text-muted">평점</small>
+                                    <span class="fx-n2 ml-3 text-gold">
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star-o"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="w-100">
+                                <p class="fx-n2 text-ellipsis">원하던 아이언맨 컨셉으로 너무 잘 꾸며주셨습니다!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- /전문가 후기 -->
+
+    <!-- 푸터 영역 -->
+    <div id="footer">
+        <div class="text-center py-3 fx-n3">
+            Copyright (C) 2020 by MyHome Inc All Rights Reserved.
+        </div>
+    </div>
+    <!-- /푸터 영역 -->
+</body>
+</html>

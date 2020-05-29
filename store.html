@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내집꾸미기</title>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="./bootstrap-4.3.1-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/Product.js"></script>
+    <script src="./js/App.js"></script>
+</head>
+<body>
+     <!-- 헤더 영역 -->
+    <div id="header">
+        <div class="container h-100">
+            <div class="d-flex justify-content-between align-items-center h-100">
+                <div class="left d-flex align-items-center">
+                    <a href="./index.html">
+                        <img src="./images/logo.svg" alt="내집꾸미기" title="내집꾸미기" height="40">
+                    </a>
+                    <div class="nav-desktop ml-5 d-none d-lg-flex">
+                        <a href="./index.html">홈</a>
+                        <a href="#">온라인 집들이</a>
+                        <a href="./store.html">스토어</a>
+                        <a href="#">전문가</a>
+                        <a href="#">시공 견적</a>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="auth d-none d-lg-flex">
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                    </div>
+                    <button class="menu-open d-lg-none">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <div class="menu d-lg-none">
+                        <div class="nav-mobile">
+                            <a class="my-2" href="./index.html">홈</a>
+                            <a class="my-2" href="#">온라인 집들이</a>
+                            <a class="my-2" href="./store.html">스토어</a>
+                            <a class="my-2" href="#">전문가</a>
+                            <a class="my-2" href="#">시공 견적</a>
+                        </div>
+                        <div class="auth-mobile mt-2">
+                            <a href="#">로그인</a>
+                            <a href="#">회원가입</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /헤더 영역 -->
+
+    <!-- 비주얼 영역 -->
+    <div id="visual" class="sub">
+        <div class="design-line d-none d-lg-block"></div>
+        <div class="design-line d-none d-lg-block"></div>
+        <div class="image-line">
+            <div class="images">
+                <img class="fit-cover" src="./images/slide/1.jpg" alt="슬라이드 이미지" title="슬라이드 이미지">
+            </div>
+        </div>
+        <div class="position-center text-center">
+            <div class="fx-7 fx-lg-6 segoe font-weight-bolder text-white">STORE</div>
+            <div class="d-between flex-column flex-lg-row mt-2">
+                <p class="text-gray fx-ㅜ1 mb-5 mb-lg-0">당신의 공간을 가득 채워줄 아이템을 찾아보세요!</p>
+            </div>
+        </div>
+    </div>
+    <!-- /비주얼 영역 -->
+
+    <!-- 장바구니 영역 -->
+    <div class="bg-gray">
+        <div class="container padding">
+            <div class="sticky-top bg-gray">
+                <div>
+                    <span class="text-muted">장바구니</span>
+                    <div class="title">CARTLIST</div>
+                </div>
+                <div class="table-head">
+                    <div class="cell-50">상품 정보</div>
+                    <div class="cell-15">가격</div>
+                    <div class="cell-10">수량</div>
+                    <div class="cell-15">합계</div>
+                    <div class="cell-10">+</div>
+                </div>
+            </div>
+            <div id="cartlist">
+                <div class="table-row">
+                    <div class="cell-50">
+                        <div class="d-flex align-items-center px-4">
+                            <img src="./images/products/product_1.jpg" alt="상품 이미지" title="상품 이미지" class="table-image">
+                            <div class="ml-4 text-left">
+                                <div class="text-muted fx-n1">마틸라</div>
+                                <div class="fx-4">마틸라</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cell-15">
+                        <span class="fx-2">20,000</span>
+                        <small class="text-muted">원</small>
+                    </div>
+                    <div class="cell-10">
+                        <input type="number" class="buy-count" min="1" value="1">
+                    </div>
+                    <div class="cell-15">
+                        <span class="fx-2 text-darkgold">20,000</span>
+                        <small class="text-muted">원</small>
+                    </div>
+                    <div class="cell-10">
+                        <button class="text-muted">&times;</button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="py-4 d-between">
+                <div>
+                    <span class="fx-3 mr-3 text-muted">총 금액</span>
+                    <span class="total-price text-darkgold fx-6">400,000</span>
+                    <span class="text-muted">원</span>
+                </div>
+                <button class="border-btn" data-toggle="modal" data-target="#buy-modal">구매하기</button>
+            </div>
+        </div>
+    </div>
+    <!-- / 장바구니 영역 -->
+    
+    <!-- 스토어 영역 -->
+    <div class="container padding">
+        <div class="sticky-top bg-white border-bottom d-between align-items-end pt-3 pb-2">
+            <div>
+                <span class="text-muted">인테리어 스토어</span>
+                <div class="title">STORE</div>
+            </div>
+            <div class="py-2 d-flex">
+                <input type="checkbox" id="open-cart" hidden checked>
+                <!-- 검색 영역 -->
+                <div class="search">
+                    <span class="icon">
+                        <i class="fa fa-search"></i>
+                    </span>
+                    <input type="text" placeholder="검색어를 입력해 주세요">
+                </div>
+                <label for="open-cart" class="drop-btn ml-3 text-gold mr-4">
+                    <i class="fa fa-shopping-cart fa-lg"></i>
+                </label>
+                <!-- 드롭 영역 -->
+                <div id="drop-area" class="ml-2">
+                    <div class="text-center text-white">
+                        <div class="normal position-center">
+                            <i class="fa fa-shopping-cart fa-3x"></i>
+                            <p class="fx-n2 mt-3">이곳에 상품을 넣어주세요.</p>
+                        </div>
+                        <div class="success position-center">
+                            <i class="fa fa-check fa-3x"></i>
+                        </div>
+                        <div class="error position-center">
+                            <i class="fa fa-times fa-3x"></i>
+                            <p class="fx-n2 mt-3">이미 장바구니에 담긴 상품입니다.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="storelist" class="row py-4">
+            <div class="col-lg-4 col-md-6 mt-5">
+                <div class="store-item">
+                    <div class="image" draggable="draggable">
+                        <img class="fit-cover" src="./images/products/product_1.jpg" alt="상품 이미지" title="상품 이미지">
+                    </div>
+                    <div class="mt-3 px-2 d-between">
+                        <div>
+                            <span class="text-muted fx-n2">마틸라</span>
+                            <div class="fx-3 mt-1">마틸라</div>
+                        </div>
+                        <div>
+                            <span class="fx-5 text-darkgold">20,000</span>
+                            <span class="text-muted">원</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /스토어 영역 -->
+
+    <!-- 구매하기 모달 -->
+    <div id="buy-modal" class="modal fade">
+        <div class="modal-dialog">
+            <form>
+                <div class="modal-content">
+                    <div class="modal-body p-4">
+                        <div class="text-center mb-5">
+                            <div class="title">Buy Item</div>
+                        </div>
+                        <div class="form-group">
+                            <label for="username">구매자 명</label>
+                            <input type="text" class="form-control" id="username" placeholder="이름을 입력해 주세요" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">배송지 주소</label>
+                            <input type="text" class="form-control" id="address" placeholder="주소를 입력해 주세요" required>
+                        </div>
+                        <div class="mt-5 text-center">
+                            <button class="black-btn w-100">구매 완료</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- /구매하기 모달 -->
+
+    <!-- 구매 내역 모달 -->
+    <div id="purchase-modal" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <img alt="구매 내역" title="구매 내역">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /구매 내역 모달 -->
+
+    <!-- 푸터 영역 -->
+    <div id="footer">
+        <div class="text-center py-3 fx-n3">
+            Copyright (C) 2020 by MyHome Inc All Rights Reserved.
+        </div>
+    </div>
+    <!-- /푸터 영역 -->
+</body>
+</html>
